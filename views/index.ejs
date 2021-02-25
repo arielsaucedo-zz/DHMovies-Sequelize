@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <ul>
+      <li>
+        <a href="/movies">Quiero ver todas las peliculas en cartelera</a>
+      </li>
+      <li>
+        <a href="/movies/new">Ultimas 5 peliculas estrenadas</a>
+      </li>
+      <li>
+        <a href="/movies/recommended">Peliculas recomendadas</a>
+      </li>
+      <li>
+        <a href="/movies/new">Quiero dar de alta una pelicula nueva</a>
+      </li>
+    </ul>
+    <form class="" action="/movies/search" method="GET">
+      <input class="" type="search" placeholder="Buscar productos"
+          aria-label="Search" name="search" id="">
+      <button class="" type="submit">Buscar</button>
+  </form>
+  </body>
+</html>
